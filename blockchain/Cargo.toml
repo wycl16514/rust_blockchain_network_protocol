@@ -1,0 +1,23 @@
+[package]
+name = "blockchain"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hex = "0.4.3"
+sha2 = "0.10.8"
+p256 = { version = "0.13", features = ["ecdsa","arithmetic"] }
+rand_core = "0.6"
+ripemd160 = "0.9"
+bs58 = "0.4"
+serde = {version = "1.0.207", features=["derive"] }
+serde_json = "1.0.124"
+env_logger = "0.10"
+log = "0.4"
+actix-web = "4.1"
+tokio = { version = "1", features = ["full"] }
+regex = "1.9"
+reqwest = { version = "0.11", features = ["json"] }
+rand = "0.8"
